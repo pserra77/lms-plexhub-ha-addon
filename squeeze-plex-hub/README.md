@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Add--on-blue.svg)](https://www.home-assistant.io/)
 [![Architecture](https://img.shields.io/badge/Architecture-ARM64-purple.svg)](https://github.com/onmomo/squeeze-plex-hub)
+[![Add Repository](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fpserra77%2Flms-plexhub-ha-addon)
 
 > Bridge Plexamp to Squeezebox and Lyrion Music Server players
 
@@ -52,7 +53,15 @@ Before installing this add-on, ensure you have:
 
 ## Installation
 
-### Method 1: Add Repository (Recommended)
+### Quick Install (Recommended)
+
+[![Add Repository](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fpserra77%2Flms-plexhub-ha-addon)
+
+Click the button above to add this repository to your Home Assistant Add-on Store automatically.
+
+### Manual Installation
+
+If you prefer manual installation:
 
 1. **Add the repository to Home Assistant:**
    - Open Home Assistant web interface
@@ -77,9 +86,9 @@ Before installing this add-on, ensure you have:
    - Click **Open Web UI**
    - Or navigate to `http://your-home-assistant-ip:3000`
 
-### Method 2: Manual Installation
+### Developer Installation
 
-If you prefer manual installation:
+If you want to install from source:
 
 ```bash
 # Clone the repository
@@ -336,6 +345,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Documentation**: [GitHub README](https://github.com/pserra77/lms-plexhub-ha-addon)
 - **Issues**: [GitHub Issues](https://github.com/pserra77/lms-plexhub-ha-addon/issues)
 - **Community**: [Home Assistant Community](https://community.home-assistant.io/)
+
+## Important Note: HACS vs Add-on Store
+
+This is a **Home Assistant Add-on**, not a HACS integration. Here's the difference:
+
+- **Home Assistant Add-on Store** - Manages add-ons like this one. Add-ons run as containers alongside Home Assistant.
+- **HACS (Home Assistant Community Store)** - Manages custom integrations, themes, and plugins. These extend Home Assistant's functionality differently.
+
+**To install this add-on:** Use the Add-on Store (instructions above), NOT HACS.
+
+If you're looking for a Squeezebox integration for Home Assistant (not an add-on), check the [Squeezebox integration](https://www.home-assistant.io/integrations/squeezebox/) in Home Assistant Core.
 
 ---
 
