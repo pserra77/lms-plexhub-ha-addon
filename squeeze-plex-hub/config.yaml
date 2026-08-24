@@ -1,0 +1,29 @@
+name: Squeeze Plex Hub
+version: "1.0.0"
+slug: squeeze_plex_hub
+description: Bridge Plexamp to Squeezebox and Lyrion Music Server players
+url: https://github.com/onmomo/squeeze-plex-hub
+image: onmomo/squeeze-plex-hub
+arch:
+  - aarch64
+startup: application
+boot: auto
+init: false
+host_network: true
+ports:
+  3000/tcp: 3000
+  32412/udp: 32412
+ports_description:
+  3000/tcp: Squeeze Plex Hub web interface
+  32412/udp: Plexamp GDM discovery
+webui: http://[HOST]:[PORT:3000]/
+options:
+  log_level: info
+schema:
+  log_level: list(debug|info|warn|error)
+map:
+  - data:rw
+environment:
+  NITRO_PORT: "3000"
+  NITRO_LOG_LEVEL: info
+stage: experimental
