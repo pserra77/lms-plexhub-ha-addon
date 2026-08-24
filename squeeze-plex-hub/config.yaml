@@ -1,5 +1,5 @@
 name: Squeeze Plex Hub
-version: "1.0.0"
+version: "latest"
 slug: squeeze_plex_hub
 description: Bridge Plexamp to Squeezebox and Lyrion Music Server players
 url: https://github.com/onmomo/squeeze-plex-hub
